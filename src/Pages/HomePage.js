@@ -9,7 +9,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div >
+    <div className="container mt-8">
       <h1 className="text-center mb-5">Welcome to College Canteen</h1>
       <div className="row">
         {menuItems.map((item, index) => (
