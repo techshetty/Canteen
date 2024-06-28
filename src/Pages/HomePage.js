@@ -1,32 +1,24 @@
-import React from 'react';
+import React from "react";
+import Button from "../layouts/Button";
 
-const HomePage = () => {
-  const menuItems = [
-    { name: 'Burger', price: '$5.99', image: 'https://via.placeholder.com/150' },
-    { name: 'Pizza', price: '$8.99', image: 'https://via.placeholder.com/150' },
-    { name: 'Salad', price: '$4.99', image: 'https://via.placeholder.com/150' },
-    { name: 'Sandwich', price: '$6.99', image: 'https://via.placeholder.com/150' },
-  ];
-
+const Home = () => {
   return (
-    <div className="container mt-8">
-      <h1 className="text-center mb-5">Welcome to College Canteen</h1>
-      <div className="row">
-        {menuItems.map((item, index) => (
-          <div key={index} className="col-md-3 mb-4">
-            <div className="card">
-              <img src={item.image} className="card-img-top" alt={item.name} />
-              <div className="card-body">
-                <h5 className="card-title">{item.name}</h5>
-                <p className="card-text">{item.price}</p>
-                <button className="btn btn-primary">Order Now</button>
-              </div>
-            </div>
-          </div>
-        ))}
+    <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
+      <div className=" w-full lg:w-2/3 space-y-5">
+        <h1 className=" text-backgroundColor font-semibold text-6xl">
+          Elevate Your Inner Foodie with Every Bite.
+        </h1>
+        <p className=" text-backgroundColor">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis et qui,
+          maxime assumenda repellat corrupti officia dolorum delectus labore
+          deleniti?
+        </p>
+        <div className=" lg:pl-44">
+          <Button title="Order Now" />
+        </div>
       </div>
     </div>
   );
 };
 
-export default HomePage;
+export default Home;
