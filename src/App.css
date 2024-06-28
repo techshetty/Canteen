@@ -55,3 +55,14 @@ body {
   height: 100vh;
   margin: -20px 0 50px;
 }
+
+.canteen-logo {
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.canteen-logo:hover {
+  transform: scale(1.1);
+}
