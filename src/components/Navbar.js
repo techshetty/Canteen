@@ -1,8 +1,10 @@
+// src/components/Navigation.js
 import React from 'react';
 import { Navbar, Nav, Container, Dropdown, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faBell, faUser, faSignInAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link as ScrollLink } from 'react-scroll';
 import canteenLogo from './canteen.png';
 import '../styles/Nav.css';
 
@@ -15,13 +17,15 @@ const Navigation = () => {
             alt="College Canteen Logo"
             className="logo-image"
           />
-          <span className="brand-text ms-2">College Canteen</span>
+          <span className="brand-text ms-2">Sahyadri Cafe</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
             <Nav.Link as={Link} to="/" className="nav-item mx-2">Home</Nav.Link>
-            <Nav.Link as={Link} to="/menu" className="nav-item mx-2">Menu</Nav.Link>
+            <ScrollLink to="menu-section" smooth={true} duration={500} className="nav-item mx-2 nav-link">
+              Menu
+            </ScrollLink>
             <Nav.Link as={Link} to="/about" className="nav-item mx-2">About Us</Nav.Link>
             <Nav.Link as={Link} to="/contact" className="nav-item mx-2">Contact</Nav.Link>
           </Nav>
