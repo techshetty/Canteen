@@ -44,7 +44,7 @@ const DishCard = ({ id, name, description, price, rating, image }) => {
         <div className="mt-auto">
           <div className="dish-info">
             <span className="price">₹{price.toFixed(2)}</span>
-            <span className="rating">{renderStars(rating)}</span>
+            <span className="rating">{renderStars(rating)}{rating}</span>
           </div>
           <Button variant="primary" className="add-to-cart-btn" onClick={handleAddToCart}>
             Add to Cart
