@@ -8,17 +8,17 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.dish-card .card-img-top {
+.card-img-top {
   height: 200px;
   object-fit: cover;
 }
 
-.dish-card .card-title {
+.card-title {
   font-weight: 600;
   color: #333;
 }
 
-.dish-card .card-text {
+.card-text {
   font-size: 0.9rem;
   color: #666;
 }
