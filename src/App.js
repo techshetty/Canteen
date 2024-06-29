@@ -12,10 +12,7 @@ function App() {
       const preloader = document.querySelector("#preloader");
       if (preloader) {
         preloader.style.display = "none";
-        document.body.style.overflow = "auto";
-        document.body.style.height = "auto";
-        document.documentElement.style.overflow = "auto";
-        document.documentElement.style.height = "auto";
+        document.querySelector("html").style.overflow='auto';
       }
     }, 3000);
 
