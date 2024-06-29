@@ -1,57 +1,57 @@
 .dish-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
-  }
-  
-  .dish-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .dish-card .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .dish-card .card-title {
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .dish-card .card-text {
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
-  .dish-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  
-  .price {
-    font-weight: 600;
-    color: #512da8;
-  }
-  
-  .rating {
-    display: flex;
-    align-items: center;
-  }
-  
-  .star-icon {
-    color: #ffc107;
-    margin-right: 0.25rem;
-  }
-  
-  .add-to-cart-btn {
-    width: 100%;
-    background-color: #512da8;
-    border-color: #512da8;
-  }
-  
-  .add-to-cart-btn:hover {
-    background-color: #4527a0;
-    border-color: #4527a0;
-  }
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.dish-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dish-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.dish-card .card-title {
+  font-weight: 600;
+  color: #333;
+}
+
+.dish-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.dish-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-weight: 600;
+  color: #512da8;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  color: #ffc107;
+  margin-right: 0.25rem;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  background-color: #512da8;
+  border-color: #512da8;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #4527a0;
+  border-color: #4527a0;
+}
