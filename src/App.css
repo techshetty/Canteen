@@ -66,3 +66,20 @@ body {
 .canteen-logo:hover {
   transform: scale(1.1);
 }
+
+#preloader{
+  top: 50%;left: 50%; position: fixed; transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preloader #load{
+  width: 300px; height: 300px;
+  background-image: url("components/loader_pr.gif");
+  background-size: cover;
+  animation: grow 250ms ease-in-out;
+}
