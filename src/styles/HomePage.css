@@ -4,22 +4,21 @@
   
   .featured-carousel {
     margin-bottom: 2rem;
-    margin-top: 820px;
   }
   
   .featured-carousel .carousel-item {
-    height: 400px; 
+    height: 600px; 
   }
   
   .featured-carousel .carousel-item img {
-    object-fit: cover;
+    object-fit:cover;
     height: 100%;
     width: 100%;
   }
   
   .menu-section {
     padding: 2rem 1rem;
-    max-width: 1200px;
+    max-width: 1525px;
     margin: 0 auto;
   }
   

@@ -6,7 +6,7 @@ import { Element } from 'react-scroll';
 import '../styles/HomePage.css';
 
 const featuredDishes = [
-  { id: 1, name: 'Spicy Chicken Burger', image: 'https://marketplace.canva.com/EAGD_Pe9v3o/2/0/1600w/canva-red-collage-playful-korean-food-banner-6b1qXmcPvE0.jpg' },
+  { id: 1, name: 'Spicy Chicken Burger', image: 'https://t3.ftcdn.net/jpg/06/20/60/30/360_F_620603091_UDbgDhPeh4FRRs9lpT6dQLVe5ILxuSPW.jpg' },
   { id: 2, name: 'Veggie Supreme Pizza', image: 'https://via.placeholder.com/800x400' },
   { id: 3, name: 'Chocolate Brownie Sundae', image: 'https://via.placeholder.com/800x400' },
 ];
