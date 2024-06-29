@@ -7,8 +7,8 @@ import '../styles/HomePage.css';
 
 const featuredDishes = [
   { id: 1, name: 'Veg Biryani', image: 'https://thumbs.dreamstime.com/b/veg-biryani-pulav-served-round-brass-bowl-selective-focus-creative-ai-323050971.jpg' },
-  { id: 2, name: 'Veggie Supreme Pizza', image: 'https://via.placeholder.com/800x400' },
-  { id: 3, name: 'Chocolate Brownie Sundae', image: 'https://via.placeholder.com/800x400' },
+  { id: 2, name: 'Gobi Manchurian', image: 'https://manjulaskitchen.com/wp-content/uploads/gobi_cauliflower_manchurian.jpg' },
+  { id: 3, name: 'Pav Bhaji', image: 'https://miro.medium.com/v2/resize:fit:1400/1*eGylbteKGLepWGU0HNJAKw.jpeg' },
 ];
 
 const menuItems = [
@@ -18,7 +18,10 @@ const menuItems = [
   { id: 4, name: 'Pulao with Gravy', description: 'Pulao rice with gravy of your choice', price: 40.00, rating: 4.7, image: 'https://i0.wp.com/foodtrails25.com/wp-content/uploads/2019/04/img_6151_ezy-watermark_20-04-2019_12-22-43am.jpg?resize=300%2C200&ssl=1' },
   { id: 5, name: 'Puri Masala', description: 'Does this really need a description', price: 40.00, rating: 4.3, image: 'https://www.viniscookbook.com/wp-content/uploads/2018/05/2018-05-11-16-00-04-300x200.jpg' },
   { id: 6, name: 'Parotta with Gravy', description: "You're gonna get fat by eating this everyday", price: 40.00, rating: 4.1, image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/899f9b7d88b22b12eced49f413522bfd' },
+  { id: 7, name: 'Pav Bhaji', description: 'Spicy mashed vegetables with buttered bread', price: 50.00, rating: 4.6, image: 'https://www.cookwithmanali.com/wp-content/uploads/2014/03/Pav-Bhaji-Recipe.jpg' },
+  { id: 8, name: 'Sev Puri', description: 'Crispy puris topped with potatoes, chutneys, and sev', price: 45.00, rating: 4.4, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1e1UWDTq98SDyteKpDLVvpI34uCyyA0dZWg&s' },
 ];
+
 
 const HomePage = () => {
   return (
