@@ -6,18 +6,18 @@ import { Element } from 'react-scroll';
 import '../styles/HomePage.css';
 
 const featuredDishes = [
-  { id: 1, name: 'Spicy Chicken Burger', image: 'https://t3.ftcdn.net/jpg/06/20/60/30/360_F_620603091_UDbgDhPeh4FRRs9lpT6dQLVe5ILxuSPW.jpg' },
+  { id: 1, name: 'Veg Biryani', image: 'https://thumbs.dreamstime.com/b/veg-biryani-pulav-served-round-brass-bowl-selective-focus-creative-ai-323050971.jpg' },
   { id: 2, name: 'Veggie Supreme Pizza', image: 'https://via.placeholder.com/800x400' },
   { id: 3, name: 'Chocolate Brownie Sundae', image: 'https://via.placeholder.com/800x400' },
 ];
 
 const menuItems = [
-  { id: 1, name: 'Classic Burger', description: 'Juicy beef patty with fresh veggies', price: 8.99, rating: 4.5, image: 'https://via.placeholder.com/300x200' },
-  { id: 2, name: 'Margherita Pizza', description: 'Traditional Italian pizza with tomato and mozzarella', price: 12.99, rating: 4.2, image: 'https://via.placeholder.com/300x200' },
-  { id: 3, name: 'Caesar Salad', description: 'Crisp romaine lettuce with Caesar dressing', price: 7.99, rating: 4.0, image: 'https://via.placeholder.com/300x200' },
-  { id: 4, name: 'Chicken Wings', description: 'Spicy buffalo wings with blue cheese dip', price: 9.99, rating: 4.7, image: 'https://via.placeholder.com/300x200' },
-  { id: 5, name: 'Pasta Alfredo', description: 'Creamy Alfredo sauce with fettuccine', price: 11.99, rating: 4.3, image: 'https://via.placeholder.com/300x200' },
-  { id: 6, name: 'Fish and Chips', description: 'Crispy battered fish with golden fries', price: 10.99, rating: 4.1, image: 'https://via.placeholder.com/300x200' },
+  { id: 1, name: 'Veg Biryani', description: 'Long white rice with fresh veggies', price: 65.00, rating: 4.5, image: 'https://www.spicingyourlife.com/wp-content/uploads/2011/06/Vegetable-Biryani-2-300x200.jpg' },
+  { id: 2, name: 'Chicken Biryani', description: 'Long white rice with tasty chicken', price: 80.00, rating: 4.2, image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/d4fcnchwt5z0jutyx1fd' },
+  { id: 3, name: 'Gobi Manuchurian', description: 'Crisp romaine gobi with a red dressing', price: 55.00, rating: 4.0, image: 'https://recipesaresimple.com/wp-content/uploads/2023/09/gobi-manchurian-gravy-300x200.jpeg' },
+  { id: 4, name: 'Pulao with Gravy', description: 'Pulao rice with gravy of your choice', price: 40.00, rating: 4.7, image: 'https://i0.wp.com/foodtrails25.com/wp-content/uploads/2019/04/img_6151_ezy-watermark_20-04-2019_12-22-43am.jpg?resize=300%2C200&ssl=1' },
+  { id: 5, name: 'Puri Masala', description: 'Does this really need a description', price: 40.00, rating: 4.3, image: 'https://www.viniscookbook.com/wp-content/uploads/2018/05/2018-05-11-16-00-04-300x200.jpg' },
+  { id: 6, name: 'Parotta with Gravy', description: "You're gonna get fat by eating this everyday", price: 40.00, rating: 4.1, image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/899f9b7d88b22b12eced49f413522bfd' },
 ];
 
 const HomePage = () => {
