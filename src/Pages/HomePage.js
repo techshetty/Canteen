@@ -34,6 +34,10 @@ const HomePage = () => {
         ))}
       </Carousel>
 
+      <div className="scroll-indicator">
+        <i className="fas fa-chevron-down"></i>
+      </div>
+
       <Element name="menu-section">
         <section className="menu-section">
           <h2 className="menu-title">Our Menu</h2>
