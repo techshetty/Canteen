@@ -1,7 +1,7 @@
-function loadHide() {
+function loadHide(del) {
   setTimeout(() => {
   document.querySelector("#preloader").style.display="none";
-  }, 5000);
+  }, del);
 }
 
 export default loadHide;

@@ -10,7 +10,7 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <div className="App" onLoad={loadHide}>
+      <div className="App" onLoad={loadHide(3000)}>
         <div id="preloader"><div id="load"></div></div>
         <Navigation />
         <Routes>
