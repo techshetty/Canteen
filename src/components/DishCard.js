@@ -27,7 +27,7 @@ const DishCard = ({ id, name, description, price, rating, image }) => {
         <Card.Text className="card-text">{description}</Card.Text>
         <div className="mt-auto">
           <div className="dish-info">
-            <span className="price">${price.toFixed(2)}</span>
+            <span className="price">₹{price.toFixed(2)}</span>
             <span className="rating">Rating: {rating}/5</span>
           </div>
           <Button variant="primary" className="add-to-cart-btn" onClick={handleAddToCart}>

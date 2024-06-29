@@ -29,13 +29,13 @@ const CartPage = () => {
               {cartItems.map((item) => (
                 <tr key={item.id}>
                   <td>{item.name}</td>
-                  <td>${item.price.toFixed(2)}</td>
+                  <td>₹{item.price.toFixed(2)}</td>
                   <td>
                     <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</Button>
                     <span className="mx-2">{item.quantity}</span>
                     <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</Button>
                   </td>
-                  <td>${(item.price * item.quantity).toFixed(2)}</td>
+                  <td>₹{(item.price * item.quantity).toFixed(2)}</td>
                   <td>
                     <Button variant="danger" size="sm" onClick={() => removeFromCart(item.id)}>Remove</Button>
                   </td>
@@ -43,7 +43,7 @@ const CartPage = () => {
               ))}
             </tbody>
           </Table>
-          <h4 className="text-end">Total: ${total.toFixed(2)}</h4>
+          <h4 className="text-end">Total: ₹{total.toFixed(2)}</h4>
           <div className="text-end mt-3">
             <Button variant="primary">Proceed to Checkout</Button>
           </div>
