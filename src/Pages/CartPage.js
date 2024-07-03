@@ -1,5 +1,5 @@
 import React from 'react';
-import { Table, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { useCart } from '../context/CartContext';
 import '../styles/CartPage.css';
 
@@ -15,34 +15,34 @@ const CartPage = () => {
         <p>Your cart is empty.</p>
       ) : (
         <>
-          <Table striped bordered hover className="cart-table">
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
+          <div className="cart-table">
+            <div className="cart-table-header">
+              <div className="cart-table-row">
+                <div className="cart-table-header-cell">Item</div>
+                <div className="cart-table-header-cell">Price</div>
+                <div className="cart-table-header-cell">Quantity</div>
+                <div className="cart-table-header-cell">Total</div>
+                <div className="cart-table-header-cell">Action</div>
+              </div>
+            </div>
+            <div className="cart-table-body">
               {cartItems.map((item) => (
-                <tr key={item.id}>
-                  <td>{item.name}</td>
-                  <td>₹{item.price.toFixed(2)}</td>
-                  <td>
+                <div className="cart-table-row" key={item.id}>
+                  <div className="cart-table-cell">{item.name}</div>
+                  <div className="cart-table-cell">₹{item.price.toFixed(2)}</div>
+                  <div className="cart-table-cell">
                     <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</Button>
                     <span className="mx-2">{item.quantity}</span>
                     <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</Button>
-                  </td>
-                  <td>₹{(item.price * item.quantity).toFixed(2)}</td>
-                  <td>
+                  </div>
+                  <div className="cart-table-cell">₹{(item.price * item.quantity).toFixed(2)}</div>
+                  <div className="cart-table-cell">
                     <Button variant="danger" size="sm" onClick={() => removeFromCart(item.id)}>Remove</Button>
-                  </td>
-                </tr>
+                  </div>
+                </div>
               ))}
-            </tbody>
-          </Table>
+            </div>
+          </div>
           <h4 className="text-end">Total: ₹{total.toFixed(2)}</h4>
           <div className="text-end mt-3">
             <Button variant="primary">Proceed to Checkout</Button>
