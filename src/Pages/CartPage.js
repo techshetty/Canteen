@@ -10,35 +10,41 @@ const CartPage = () => {
 
   if (cartItems.length === 0)
     return (
-      <div className="cart-page">
-        <h2>Your Cart</h2>
-        <p className="empty-cart-message">Your cart is empty.</p>
+      <div id="cart-page">
+        <h2 id="cart-title">Your Cart</h2>
+        <p id="empty-cart-message">Your cart is empty.</p>
       </div>
     );
 
   return (
-    <div className="cart-page">
-      <div className="cart-items">
+    <div id="cart-page">
+      <h2 id="cart-title">Your Cart</h2>
+      <div id="cart-items">
         {cartItems.map((item) => (
           <div className="cart-item" key={item.id}>
             <Image src={item.image} alt={item.name} className="cart-item-image" />
-            <div className="cart-item-details">
-              <h4>{item.name}</h4>
-              <p>₹{item.price.toFixed(2)}</p>
-              <div className="quantity-controls">
-                    <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</Button>
-                    <span className="quantity">{item.quantity}</span>
-                    <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</Button>
+            <div id="cart-item-details">
+              <div id="cart-item-info">
+                <h4 id="cart-item-name">{item.name}</h4>
+                <p id="cart-item-price">₹{item.price.toFixed(2)}</p>
               </div>
-              <p>Total: ₹{(item.price * item.quantity).toFixed(2)}</p>
-              <Button variant="danger" size="sm" onClick={() => removeFromCart(item.id)}>Remove</Button>
+              <div id="quantity-controls">
+                <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</Button>
+                <span id="quantity">{item.quantity}</span>
+                <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</Button>
+              </div>
+              <Button variant="danger" size="sm" id="remove-button" onClick={() => removeFromCart(item.id)}>Remove</Button>
             </div>
           </div>
         ))}
-        <div className="cart-summary">
-          <h4>Total: ₹{total.toFixed(2)}</h4>
-          <Button variant="primary" className="proceed-to-checkout">Proceed to Checkout</Button>
+      </div>
+      <div id="cart-summary">
+        <h4>Cart Total</h4>
+        <div id="summary-details">
+          <p>Subtotal: ₹{total.toFixed(2)}</p>
+          <p>Total: ₹{total.toFixed(2)}</p>
         </div>
+        <Button variant="primary" id="proceed-to-checkout">Proceed to Checkout</Button>
       </div>
     </div>
   );
