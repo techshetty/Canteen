@@ -127,3 +127,24 @@ body {
     width: 100%;
   }
 }
+
+/* Add this to your existing Nav.css file */
+.nav-icon {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 0.7rem;
+  padding: 0.25em 0.4em;
+  border-radius: 50%;
+  background-color: #dc3545;
+  color: white;
+  min-width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

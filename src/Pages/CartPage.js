@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, ListGroup, Image } from 'react-bootstrap';
 import { useCart } from '../context/CartContext';
 import '../styles/CartPage.css';
 
@@ -12,7 +12,7 @@ const CartPage = () => {
     <div className="cart-page">
       <h2>Your Cart</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p className="empty-cart-message">Your cart is empty.</p>
       ) : (
         <>
           <div className="cart-table">
@@ -32,7 +32,7 @@ const CartPage = () => {
                   <div className="cart-table-cell">₹{item.price.toFixed(2)}</div>
                   <div className="cart-table-cell">
                     <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity - 1)}>-</Button>
-                    <span className="mx-2">{item.quantity}</span>
+                    <span className="quantity">{item.quantity}</span>
                     <Button variant="outline-secondary" size="sm" onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</Button>
                   </div>
                   <div className="cart-table-cell">₹{(item.price * item.quantity).toFixed(2)}</div>
