@@ -25,7 +25,7 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <button type="submit" className="btn-primary">Post Comment</button>
+          <button type="submit" id="submit-btn">Post Comment</button>
         </form>
       </div>
     </div>

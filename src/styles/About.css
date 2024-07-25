@@ -1,46 +1,52 @@
-/* src/styles/About.css */
 .about-page {
-    margin-top: 80px;
-    padding: 0 15px;
-  }
-  
-  .about-section {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .about-section h2 {
-    margin-bottom: 20px;
-  }
-  
-  .about-section p {
-    text-align: justify;
-    line-height: 1.6;
-    margin-bottom: 15px;
-  }
-  
-  .about-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .about-card {
-    flex: 1;
-    max-width: 30%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    text-align: justify;
-  }
-  
-  .about-card h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .about-card p {
-    line-height: 1.6;
-  }
-  
+  padding: 40px 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #2c3e50;
+  background-color: transparent;
+  border: 2px solid #2c3e50;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about-button:hover {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+}
