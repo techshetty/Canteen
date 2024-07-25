@@ -7,8 +7,10 @@ import Navigation from './components/Navbar';
 import HomePage from './Pages/HomePage';
 import LoginPage from './Pages/LoginPage';
 import CartPage from './Pages/CartPage';
+import AboutPage from './Pages/AboutPage';
 import { CartProvider } from './context/CartContext';
 import './App.css'
+import ContactPage from './Pages/ContactPage';
 
 function App() {
   useEffect(() => {
@@ -33,6 +35,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/cart" element={<CartPage />} />
+            <Route path="/about" element={<AboutPage/>}/>
+            <Route path="/contact" element={<ContactPage/>}/>
           </Routes>
         </div>
       </Router>

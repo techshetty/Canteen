@@ -1,0 +1,46 @@
+/* src/styles/About.css */
+.about-page {
+    margin-top: 80px;
+    padding: 0 15px;
+  }
+  
+  .about-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .about-card {
+    flex: 1;
+    max-width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: justify;
+  }
+  
+  .about-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-card p {
+    line-height: 1.6;
+  }
+  
