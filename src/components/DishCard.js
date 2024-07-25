@@ -10,7 +10,7 @@ const DishCard = ({ id, name, description, price, rating, image }) => {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    addToCart({ id, name, price });
+    addToCart({ id, name, price, image });
     toast.success('Added to cart!', {
       position: "bottom-right",
       autoClose: 2000,
