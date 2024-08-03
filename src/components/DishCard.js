@@ -10,7 +10,7 @@ const DishCard = ({ id, name, description, price, rating, image }) => {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    addToCart({ id, name, price });
+    addToCart({ id, name, price, image });
     toast.success('Added to cart!', {
       position: "bottom-right",
       autoClose: 2000,
@@ -44,7 +44,7 @@ const DishCard = ({ id, name, description, price, rating, image }) => {
         <div className="mt-auto">
           <div className="dish-info">
             <span className="price">₹{price.toFixed(2)}</span>
-            <span className="rating">{renderStars(rating)}</span>
+            <span className="rating">{renderStars(rating)}{rating}</span>
           </div>
           <Button variant="primary" className="add-to-cart-btn" onClick={handleAddToCart}>
             Add to Cart

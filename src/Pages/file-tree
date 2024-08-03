@@ -1,0 +1,62 @@
+canteen/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── DishCard.js
+│   │   ├── Login.js
+│   │   └── Navbar.js
+│   ├── context/
+│   │   └── CartContext.js
+│   ├── layouts/
+│   │   └── Button.js
+│   ├── Pages/
+│   │   ├── CartPage.js
+│   │   ├── HomePage.js
+│   │   └── LoginPage.js
+│   ├── scripts/
+│   │   └── preloader.js
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── CartPage.css
+│   │   ├── DishCard.css
+│   │   ├── HomePage.css
+│   │   ├── Login.css
+│   │   └── Nav.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
+
+
+
+
+
+
+
+
+server/
+├── config/
+│   └── db.js
+├── controllers/
+│   └── authController.js
+├── middlewares/
+│   └── authMiddleware.js
+├── models/
+│   └── User.js
+├── routes/
+│   └── authRoutes.js
+├── .env
+├── server.js
+├── package.json
+└── package-lock.json

@@ -20,7 +20,16 @@ const menuItems = [
   { id: 6, name: 'Parotta with Gravy', description: "You're gonna get fat by eating this everyday", price: 40.00, rating: 4.1, image: 'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/899f9b7d88b22b12eced49f413522bfd' },
   { id: 7, name: 'Pav Bhaji', description: 'Spicy mashed vegetables with buttered bread', price: 50.00, rating: 4.6, image: 'https://www.cookwithmanali.com/wp-content/uploads/2014/03/Pav-Bhaji-Recipe.jpg' },
   { id: 8, name: 'Sev Puri', description: 'Crispy puris topped with potatoes, chutneys, and sev', price: 45.00, rating: 4.4, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1e1UWDTq98SDyteKpDLVvpI34uCyyA0dZWg&s' },
+  { id: 9, name: 'Mini Meal', description: 'Rice, dal, and some curry', price: 60.00, rating: 4.3, image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPH_bGk1WCACJJ6_KYXR8cLnsTnAt9nwvSCM_Xi4KctfUVEytFYAe_86HCFqAKYi4CGtSawAhx05MWty0BC70Ur_BsSnhnviAGNB8jArjy8L3whI4xPk_3Xqoh04-exghbeQkJDpTcDBn8/s1600/Vegetable-dalcurry-rice.JPG' },
+  { id: 10, name: 'Lemon Rice', description: 'Rice flavored with lemon and spices', price: 45.00, rating: 4.4, image: 'https://www.spicezone.com/wp-content/uploads/2016/02/DSC_4373-2-copy.jpg' },
+  { id: 11, name: 'Bisi Bele Bath', description: 'A traditional South Indian rice dish with lentils and vegetables', price: 70.00, rating: 4.5, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZq0ieF02mxlOp8lSsGiCbS7BZ7guWI5h0JA&s' },
+  { id: 12, name: 'Masala Dosa', description: 'Crispy dosa stuffed with spiced potatoes', price: 55.00, rating: 4.6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaFqPbuAGcTVqcZIibVrPfhhK0JgmEAtJ_zg&s' },
+  { id: 13, name: 'Chicken Meal', description: 'Rice with chicken curry and accompaniments', price: 80.00, rating: 4.5, image: 'https://www.shutterstock.com/image-photo/indian-gavkari-chicken-thali-food-600nw-2017167788.jpg' },
+  { id: 14, name: 'Chappathi with Kurma', description: 'Soft chappathi served with a spicy kurma', price: 40.00, rating: 4.3, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZGo5kgIWkb33GMPShBZdEkFGoLsJpekJyeQ&s' },
+  { id: 15, name: 'Special Meal', description: 'Rice, curry, curds, and papad', price: 65.00, rating: 4.7, image: 'https://i0.wp.com/vps029.manageserver.in/menu/wp-content/uploads/2024/01/veg-thali.jpg?fit=1280%2C720&ssl=1' },
+  { id: 16, name: 'Tomato Rice', description: 'Rice cooked with tomatoes and spices', price: 50.00, rating: 4.4, image: 'https://c.ndtvimg.com/2021-08/8j9265i8_tomato-rice_625x300_16_August_21.jpg' }
 ];
+
 
 
 const HomePage = () => {
